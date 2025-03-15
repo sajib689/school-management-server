@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URL, {
     useFindAndModify: false
 }).then(console.log('Connected to MongoDB')).catch(err => console.log(err))
 
-// Sample Routes
+// Test Routes
 app.get('/', (req, res) => {
     res.send("Welcome to School Management API");
   });
